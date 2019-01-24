@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Basis-regular';
+    src: url('../../assets/fonts/BasisWeb/FarfetchBasisBeta-Regular3.woff2') format('woff2'); /* Super Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Basis-bold';
+    src: url('../../assets/fonts/BasisWeb/FarfetchBasisBeta-Bold.woff2') format('woff2'); /* Super Modern Browsers */
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  body{
+      font-family: 'Basis-Regular';
+      h1{
+          font-family: 'Basis-Bold';
+      }
+  }

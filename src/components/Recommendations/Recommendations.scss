@@ -1,0 +1,35 @@
+.recommendations--container{
+
+
+    .sliderTabs{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        float: none !important;
+    }
+
+    .sliderTabsModule .sliderTabs-slide, .sliderTabsModule .sliderTabs-slide{
+        border: none !important;
+    }
+    .cards{
+        box-shadow: none !important;
+    }
+    .tabs-transparent .tabs-title.active{
+        position: relative;
+        &:after{
+            display: block;
+            content: "";
+            position: absolute;
+            height: 3px;
+            background: #C4AA89;
+            width: calc(100% - 13px);
+            margin-top: 6px;
+        }
+    }
+    .sliderTabsModule img{
+        padding: 12px 36px 36px 36px !important;
+        padding-bottom: 44px !important;
+    }
+    .image-wrapper{
+        padding-bottom: 120%;
+    }
+}

@@ -1,0 +1,38 @@
+.slick-track{
+    opacity:1 !important;
+    
+    width:auto;
+
+    @media only screen and (min-width: 320px) {
+        transform:translate3d(0px, 0px, 0px)!important;
+    }
+    @media only screen and (min-width: 960px) {
+        transform:translate3d(0px, 0px, 0px)!important;
+    }
+
+}
+
+.PDPslideshow .slick-img{
+    object-fit: contain !important;
+}
+
+.slick-slide {
+    
+    @media only screen and (min-width: 320px) {
+        width: 100%;
+        &.slick-current {
+            display: none !important;
+        }
+    }
+    outline: none;
+    @media only screen and (min-width: 960px) {
+        width: 50%;
+        &.slick-current {
+            display: block !important;
+        }
+    }
+}
+
+// .slick-list {
+//     overflow-x: scroll !important;
+// }

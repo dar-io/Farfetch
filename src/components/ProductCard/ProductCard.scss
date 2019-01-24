@@ -1,0 +1,207 @@
+.product-card{
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    position: relative;
+    @media only screen and (min-width: 320px) {
+        padding: 0;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 36px;
+        grid-template-areas: "product-image product-details";
+        text-align: left;
+        
+        .product-card--Details {
+            align-self: stretch;
+        }
+    }
+
+
+    @media only screen and (min-width: 576px) {
+        padding: 0 24px 24px 24px;
+        text-align: center;
+        grid-gap: 0px;
+        align-self: stretch; 
+        grid-template-columns: 1fr ;
+        grid-template-areas: "product-image"
+                             "product-details";
+      }
+    
+    @media only screen and (min-width: 960px) {
+        
+    }
+
+    @media only screen and (min-width: 1280px) {
+        padding: 0 36px 24px 36px;
+    }
+   
+    
+}
+
+.product-card--image{
+    grid-area: product-image;
+
+    
+    @media only screen and (min-width: 320px) {
+        padding: 0px;
+    }
+    @media only screen and (min-width: 960px) {
+        .product-card--image-inner{
+            padding: 32px 12px 0px 12px;
+        }
+    }
+    @media only screen and (min-width: 1280px) {
+     
+    }
+}
+
+
+.product-card--image-inner{
+    position: relative;   
+}
+
+.product-image{
+    display: block;
+    img{
+        display: block;
+    }
+}
+
+.rollover-image{
+    display: none;
+    @media only screen and (min-width: 960px) {
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        opacity: 0;
+        animation-name: fadeOut;
+        animation-duration: 0.2s;
+        animation-timing-function: ease-out;
+        cursor: pointer;
+        &:hover{
+            opacity: 1;
+            animation-name: fadeIn;
+            animation-duration: 0.2s;
+            animation-timing-function: ease-out;
+        }
+    }
+}
+
+.product-card--Details {
+        grid-area: product-details;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        @media only screen and (min-width: 320px) {
+            padding: 48px 0;
+        }
+        @media only screen and (min-width: 576px) {
+           
+                padding-top: 36px;
+                padding-bottom: 0;
+        }
+        @media only screen and (min-width: 960px) {
+            
+        }
+    }
+
+.product-card--title{
+    font-family: Polaris-Condensed-Bold,Polaris-Bold,Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    letter-spacing: .16rem;
+    line-height: 1.64;
+}
+
+.product-card--price{
+    letter-spacing: normal;
+    text-transform: none;
+    font-size: 1.5rem;
+    line-height: 1.46;
+    display: block;
+}
+
+.product-card--buttons{
+    margin-top: 24px;
+
+   
+}
+
+.product-card--buttons .btns:nth-last-child(-n+1):first-child, .product-card--buttons .btns:nth-last-child(-n+1):first-child ~ .btns {
+    
+    &.similarButton{
+        margin-bottom: 54px;
+    }
+    &.AddToBag{
+        margin-top: 0px;
+    }
+ }
+
+
+
+
+
+
+.product-card--button{
+   
+    @media only screen and (min-width: 320px) {
+        // display: none !important;
+    }
+    @media only screen and (min-width: 960px) {
+        // display: block !important;
+    }
+}
+
+.wishlist-btn{
+    background-color: transparent;
+    border: .1rem solid transparent;
+    cursor: pointer;
+    height: 4.6rem;
+    outline: none;
+    padding: 0;
+    z-index: 1;
+    position: absolute;
+    @media only screen and (min-width: 320px) {
+        right: 0px;
+        top: 0px;
+    }
+    @media only screen and (min-width: 575px) {
+        right: 0px;
+        bottom: 0px;
+    }
+
+    @media only screen and (min-width: 960px) {
+        right: 24px;
+        
+    }
+
+    @media only screen and (min-width: 1280px) {
+        right: 36px;
+        
+    }
+
+
+    
+
+    width: 4.6rem;
+}
+
+.icon-star {
+    -webkit-transform: translateZ(0);
+    -webkit-transition: opacity .3s ease-in-out;
+    background-image: url(../../assets/svg/star.svg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 2.2rem 2.2rem;
+    display: block;
+    height: 100%;
+    opacity: .3275;
+    transform: translateZ(0);
+    transition: opacity .3s ease-in-out;
+}
+
+._1ccaf6{
+    text-align: left;
+}
